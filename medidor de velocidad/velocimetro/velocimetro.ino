@@ -86,7 +86,7 @@ void setup()
       if(Serial.available()>0)
     {
       start = Serial.read();
-      if(start != 1)
+      if(start == '1')
       {
         contador = true;
         times=0;
